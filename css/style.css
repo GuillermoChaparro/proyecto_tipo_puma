@@ -1,0 +1,144 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "Artifika", serif;
+}
+
+.contenedor-grid{
+  display: grid;
+  grid-template-columns:repeat(4,1fr) ; /*FILAS*/
+  grid-template-rows: 40px 70px 150px auto 50px; /* agregamos una fila para la barra blanca */
+  grid-template-areas: 
+  "barrablanca barrablanca barrablanca barrablanca"
+  "barra barra barra barra"
+  "publi publi publi publi"
+  "cont cont cont cont"
+  "datosf datosf datosf datosf";
+}
+
+
+.barra-nav{
+  grid-area: barra;
+  display: flex;
+  background-color: black;
+  flex-direction: row;
+  justify-content: space-between;
+
+
+}
+
+.barra-nav nav{
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.barra-nav ul{
+  width: 50%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    
+}
+
+
+.barra-nav a{
+  text-decoration: none;
+  color: aliceblue;
+    
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.barra-nav img{
+  height: 80px;
+}
+
+
+.iconos{
+  display: flex;
+  align-items: center;
+}
+.iconos img{
+  height: 50px;
+  transition: all 0.3s ease;
+  border-radius: 0; /* estado normal */
+}
+
+.iconos img:hover {
+  border-radius: 50%; /* lo hace circular */
+  border: 2px solid #ffffff; /* borde redondo */
+}
+
+
+
+  /*BARRA COLOR BLANCO SUPERIOR*/
+
+.barra{
+  grid-area: barrablanca;
+  display: flex;
+  justify-content: space-around;
+}
+
+.barra p{
+  margin-left: 300px;
+}
+.barra a{
+  margin-right: 300px;
+}
+ 
+/*PUBLICIDAD*/
+.publicidad{
+  grid-area: publi;
+  background-color: #003576;
+}
+.publicidad h1{
+  color: #ffffff;
+  text-align: center;
+}
+.publicidad p{
+  color: #ffffff;
+  text-align: center;
+}
+.publicidad img{
+  width:15%;
+  height: 20%;
+}
+
+
+
+  
+/*infroamcion del medio*/
+
+.corredor{
+  display: flex;
+}
+.corredor img{
+  padding: 50px;
+  width: 700px;
+  height: 500px;
+}
+
+.informacion{
+  grid-area: cont;
+
+  background-color: #ffffff;
+}
+
+.carrucel img{
+  width: 100%;
+  height: 500px;
+}
+
+
+
+  /*datos*/
+.datos{
+  grid-area: datosf;
+  display: flex;
+  background-color: greenyellow;
+}
+
+

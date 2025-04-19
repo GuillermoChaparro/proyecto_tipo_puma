@@ -1,0 +1,203 @@
+/*
+COLORES:
+blanco: #ffffff 
+celeste: #9ae6ff;
+azul: #124969;
+VERDE OSCURO: #143D60
+dorado: #beb246;
+*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Artifika", serif;
+}
+
+
+
+/*HEADER*/
+header{
+    background-color:#ffffff ;
+    display: flex;
+    height: 10px;
+    justify-content: space-between; /*separar logo de botones*/
+    background-color: #9ae6ff;   /* color de la barra */
+    align-items: center;
+    padding: 20px;
+    
+}
+.titulo{
+    color: #124969;
+    text-align: center;
+    
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;/*elmina el surrallado de los link (elmina todos los estilos predetermiandos de los text)*/
+}
+
+.logo img{
+    width: 50px; /* Ajusta el tamaño de la imagen */
+    height: 50px;
+    border-radius: 50%; /* Redondea completamente la imagen */
+    border: 1px solid #beb246;
+    margin-right: 20px;
+    
+}
+
+
+.menu  ul {
+    
+    list-style: none;
+    display: flex;
+}
+.menu li {    
+    /*espacio entre enlces*/
+    margin-right: 20px;
+    
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: #143D60;
+    padding-right: 10px; /*espacio estre elementos*/
+    
+}
+
+/*cambia el color de los elementos al pasar el color por arriba*/
+.menu :hover{
+    color: aliceblue;
+}
+
+/*MAIN*/
+.carrucel{ 
+    width: 100%;
+    height: 300px; /* Altura del banner */
+    background-image: url(../assets/imagen1-carrucel.jpg); /* Ruta de la imagen */
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+    background-position: center center; /* Centra la imagen */
+}
+
+.linea{
+    background-color:#beb246 ;
+    
+}
+
+.linea p{
+    color: #ffffff;
+    text-align: center;
+}
+
+.titulo-prodcuto{
+    color: #ffffff;
+    text-align: center;
+    background-color: #143D60;
+    
+}
+
+.productos{
+    background-color: #143D60;
+    display: flex;
+    justify-content: center; /* centra verticalmente */
+
+}
+.productos h1{
+    text-align: center;
+    
+}
+
+.card-prodcuto{
+    width: 300px;
+    border: 25px solid #143D60;
+    background-color: #9ae6ff;
+    border-radius: 10%;
+    flex-direction: column; /* para apilar elementos verticalmente */
+    justify-content: center; /* centra verticalmente */
+    align-items: center;     /* centra horizontalmente */
+    text-align: center;      /* centra texto dentro de los elementos */
+}
+
+.columna1 {
+    padding: 25px;
+    margin: 0 10px;
+}   
+.columna2 {
+    padding: 25px;
+    margin: 0 10px;
+}  
+.columna3 {
+    padding: 25px;
+    margin: 0 10px;
+}
+.card-prodcuto img{
+    width: 80%;
+    align-items: center;
+}
+
+.card-prodcuto p{
+    width: 100%;
+}
+
+
+.video-texto{
+    background-color: #9ae6ff;
+    display: flex;
+}
+.video{
+   border: 2px solid #beb246;
+   
+}
+.texto{
+    text-align: center;
+    color: #143D60;
+}
+
+
+
+/*FOOTER*/
+
+footer{
+    background-color:#646262 ;
+    text-decoration-color: #ffffff;
+}
+footer p{
+    color: #ffffff;
+    text-align: center;
+}
+
+
+
+
+/*contacto*/
+
+.redes{
+    background-color: #9ae6ff;
+    display: flex;    
+    justify-content: center; /* centra verticalmente */
+    align-items: center;     /* centra horizontalmente */
+    gap: 30px; /*SE USA PARA DAR ESPPACIOS ENTRE ELEMENTOS*/
+}
+
+.subtitulo{
+    color: #ffffff;
+    text-align: center;
+    background-color: #143D60;
+}
+
+
+.redes a img{
+    width: 50px; /* Ajusta el tamaño de la imagen */
+    height: 50px;
+    border-radius: 50%; /* Redondea completamente la imagen */
+    border: 2px solid #beb246;
+    margin-left: 20px;
+   
+}
+
+.como-llegar{
+    background-color: #9ae6ff;
+}
+.como-llegar img{
+    border: 2px solid#beb246;
+}
