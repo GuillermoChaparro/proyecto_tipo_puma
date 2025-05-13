@@ -1,0 +1,25 @@
+@keyframes aparecer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.titulo{
+  animation: aparecer 3s ease forwards;
+}
+.barra-navegacion {
+  img{
+    
+    animation: aparecer 1s ease forwards;
+  }
+  li{
+    animation: aparecer 2s ease forwards;
+  }
+  .iconos{
+
+    animation: aparecer 3s ease forwards;
+  }
+}

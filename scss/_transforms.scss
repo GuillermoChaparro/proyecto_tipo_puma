@@ -1,0 +1,28 @@
+.barra-navegacion {
+    a {
+        &:hover {
+          transform: rotate(2DEG);
+        }
+    }
+    img {
+        &:hover{
+        transform: rotate(10DEG);
+        }
+      }
+}
+
+
+.titulo{
+  &:hover{
+    transform: rotate(1DEG);
+    }
+  h1,h2,h3{
+    &:hover{
+      transform: rescale(1.05) translateY(-10px);;
+    }
+  }
+}
+
+
+
+

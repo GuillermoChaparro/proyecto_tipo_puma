@@ -1,0 +1,85 @@
+
+//publicidad
+.publicidad{
+    background-color: $color-banner;
+    
+    h1,h2,h3,a,p{
+        color: $color-terceario;
+        text-align: center;
+      }
+      a{
+        text-decoration: underline;
+      }
+
+}
+.publicidad-red{
+  background-color: rgb(209, 35, 35);
+}
+
+.titulo{
+  width: 50%;
+  margin: 0 auto;
+  background-color: $color-secundario;
+  h1,h2,h3{
+    color: $color-terceario;
+    font-weight: bold;
+  }
+  
+}
+
+
+
+.chango{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  img{
+    width: 100%;
+    height: auto;
+  }  
+}
+
+
+
+.footer{
+  display: flex;
+  background-color: $color-primario;
+  text-align: center;
+  justify-content:space-around;
+  p{
+    color: $color-terceario;
+    }  
+}
+
+
+
+
+
+/*TABLET*/
+@media (max-width: 768px) {
+  .publicidad{
+background-color: red;
+font-size: 0.8rem;
+padding: 0.5rem;
+  }
+  .card {
+    font-size: 0.7rem;
+    margin-bottom: 1rem;
+    img {
+      height: 150px;
+      object-fit: cover;
+      .card-text {
+        font-size: 0.75rem;
+      }
+    }
+  }
+}
+
+/*movile*/
+@media (max-width: 480px) {
+  .publicidad{
+    display: none;
+  }
+  
+}

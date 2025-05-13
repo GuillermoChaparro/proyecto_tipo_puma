@@ -1,179 +1,178 @@
-*{
+/*fuente*/
+/*efectos*/
+body {
+  font-family: FFDIN, Inter, sans-serif;
+  background-color: #ffffff;
   padding: 0;
   margin: 0;
-  font-family: "Artifika", serif;
 }
 
-
-
-/*BARRA DE NAVEGACION*/
-.barra-navegacion{
-  background-color: black;
-
+.barra-navegacion {
+  background-color: #000000;
 }
-
-.barra-navegacion nav{
+.barra-navegacion nav {
   display: flex;
-  width: 90%;
   justify-content: space-between;
+  width: 90%;
 }
-
-.barra-navegacion ul{
+.barra-navegacion ul {
   width: 50%;
-  list-style-type: none;
+  list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
-    
 }
-
-
-.barra-navegacion a{
+.barra-navegacion a {
   text-decoration: none;
-  color: aliceblue;
-    
+  color: #ffffff;
 }
-a:hover {
+.barra-navegacion a:hover {
   text-decoration: underline;
 }
-
-.barra-navegacion img{
-  height: 80px;
+.barra-navegacion img {
+  height: 50px;
 }
-
-
-.iconos{
+.barra-navegacion .iconos {
   display: flex;
   align-items: center;
 }
-.iconos img{
+.barra-navegacion .iconos img {
   height: 50px;
   transition: all 0.3s ease;
   border-radius: 0; /* estado normal */
 }
-
-.iconos img:hover {
+.barra-navegacion .iconos img:hover {
   border-radius: 50%; /* lo hace circular */
   border: 2px solid #ffffff; /* borde redondo */
 }
 
-
-/*PUBLICIDAD*/
-.publicidad{
-  background-color: #003576;
-}
-.publicidad h1,h2,h3{
-  color: #ffffff;
-  text-align: center;
-}
-.publicidad p{
-  color: #ffffff;
-  text-align: center;
-}
-.publicidad-red{
-  background-color: rgb(209, 35, 35);
-}
-
-
-/*infroamcion del medio*/
-
-.informacion{
-
+.informacion {
   background-color: #ffffff;
 }
-.informacion h1,h2,h3{
-text-align: center;
+.informacion h1, .informacion h2, .informacion h3 {
+  text-align: center;
   color: #191919;
 }
 
-.corredor{
+.corredor {
   display: flex;
   justify-content: flex-start;
-  
 }
-.corredor img{
+.corredor img {
   padding: 50px;
   width: 700px;
   height: 500px;
-  
 }
 
-
-
-.carrucel img{
+.carrucel img {
   width: 50px;
   height: auto;
 }
 
-
-
-/*CARD*/
-.productos{
-  width: 18rem;
+.publicidad {
+  background-color: #001126;
 }
-
-
-  /*datos*/
-.datos{
-  display: flex;
-  background-color: rgb(0, 0, 0);
+.publicidad h1, .publicidad h2, .publicidad h3, .publicidad a, .publicidad p {
+  color: #ffffff;
   text-align: center;
-  justify-content:space-around;
-  
 }
-.datos p{
-  color: #c4bebe;
+.publicidad a {
+  text-decoration: underline;
 }
 
+.publicidad-red {
+  background-color: rgb(209, 35, 35);
+}
 
+.titulo {
+  width: 50%;
+  margin: 0 auto;
+  background-color: #191919;
+}
+.titulo h1, .titulo h2, .titulo h3 {
+  color: #ffffff;
+  font-weight: bold;
+}
 
-
-.chango{
+.chango {
   display: flex;
   justify-content: center;
   justify-items: center;
   align-items: center;
-  
 }
-.chango img{
+.chango img {
   width: 100%;
   height: auto;
 }
 
-/*TABLET*/
-
-@media (max-width: 768px) {
-  .publicidad{
-background-color: red;
-font-size: 0.8rem;
-padding: 0.5rem;
-  }
+.footer {
+  display: flex;
+  background-color: #000000;
+  text-align: center;
+  justify-content: space-around;
+}
+.footer p {
+  color: #ffffff;
 }
 
-
+/*TABLET*/
 @media (max-width: 768px) {
+  .publicidad {
+    background-color: red;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
   .card {
     font-size: 0.7rem;
     margin-bottom: 1rem;
   }
-
   .card img {
     height: 150px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
-
-  .card-text {
+  .card img .card-text {
     font-size: 0.75rem;
   }
 }
-
-
 /*movile*/
 @media (max-width: 480px) {
-  .publicidad{
+  .publicidad {
     display: none;
   }
-  
+}
+.barra-navegacion a:hover {
+  transform: rotate(2DEG);
+}
+.barra-navegacion img:hover {
+  transform: rotate(10DEG);
 }
 
+.titulo:hover {
+  transform: rotate(1DEG);
+}
+.titulo h1:hover, .titulo h2:hover, .titulo h3:hover {
+  transform: rescale(1.05) translateY(-10px);
+}
 
+@keyframes aparecer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.titulo {
+  animation: aparecer 3s ease forwards;
+}
+
+.barra-navegacion img {
+  animation: aparecer 1s ease forwards;
+}
+.barra-navegacion li {
+  animation: aparecer 2s ease forwards;
+}
+.barra-navegacion .iconos {
+  animation: aparecer 3s ease forwards;
+}/*# sourceMappingURL=style.css.map */

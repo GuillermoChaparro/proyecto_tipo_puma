@@ -1,0 +1,80 @@
+//INRMACION SUPERIOR (HEADER)
+.barra-navegacion {
+    background-color: $color-primario;
+  
+    nav {
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+    }
+  
+    ul {
+      width: 50%;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    a {
+      text-decoration: none;
+      color: $color-terceario;
+  
+      &:hover {
+        text-decoration: underline;
+
+      }
+    }
+  
+    img {
+      height: 50px; // Ajusta este valor si necesitas mantener proporciones
+    }
+
+    //iconos  
+.iconos{
+    display: flex;
+    align-items: center;
+    img{
+        height: 50px;
+        transition: all 0.3s ease;
+        border-radius: 0; /* estado normal */
+        &:hover{
+                border-radius: 50%; /* lo hace circular */
+                border: 2px solid $color-terceario; /* borde redondo */
+        }
+      }
+}
+}
+
+
+
+
+
+//INFORMACION DEL MEDIO DE LA PAGINA (MAIN)
+.informacion{
+
+    background-color: #ffffff;
+    h1,h2,h3{
+        text-align: center;
+          color: #191919;
+        }
+}
+  
+  
+.corredor{
+    display: flex;
+    justify-content: flex-start;
+    img{
+        padding: 50px;
+        width: 700px;
+        height: 500px;
+        
+      }
+} 
+
+
+.carrucel img{
+    width: 50px;
+    height: auto;
+  }
+  

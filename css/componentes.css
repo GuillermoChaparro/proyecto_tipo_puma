@@ -1,0 +1,15 @@
+.publicidad {
+  background-color: #003576;
+}
+.publicidad h1, .publicidad h2, .publicidad h3 {
+  color: #ffffff;
+  text-align: center;
+}
+.publicidad p {
+  color: #ffffff;
+  text-align: center;
+}
+
+.publicidad-red {
+  background-color: rgb(209, 35, 35);
+}/*# sourceMappingURL=componentes.css.map */
