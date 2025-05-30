@@ -17,39 +17,51 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Artifika&display=swap" rel="stylesheet">
 
-  <title>©PUMA</title>
-</head>
+   <title>PUMA| Bienvenidos</title>
+    <meta name="description" content="Todo lo que buscar en indumentia">
+    <meta name="author" content="Guillermo Chaparro">
+    <meta name="keywords" content="Bontines,Camperas,Zapatillas,Remeras,Buzos">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!--Etiquetas canonicas-->
+    <link rel="canonical" href="https://Puma.com.ar">
 
+    <link rel="preload" as="image" href="./assets/logo.webp" type="imagen/webp">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./assets/logo.webp" type="imagen/webp"href="">
+
+</head>
 <body>
 
-  <header class="barra-navegacion">
-    <nav class="navbar navbar-expand-lg navbar-dark  w-100">
-        <div class="container">
-          <a class="navbar-brand" href="../index.html"><img src="../assets/logo.png" alt="logo" height="50"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-    
-          <div class="collapse navbar-collapse" id="navbarContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item"><a class="nav-link" href="#"><strong>Nuevo</strong></a></li>
-              <li class="nav-item"><a class="nav-link" href="#"><strong>Niños</strong></a></li>
-              <li class="nav-item"><a class="nav-link" href="#"><strong>Deportes</strong></a></li>
-              <li class="nav-item"><a class="nav-link" href="#"><strong>Outlet</strong></a></li>
-            </ul>
-    
-            <div class="d-flex gap-3 iconos">
-              <a href="#"><img src="../assets/icono-corazon.png" alt="favorito" height="30"></a>
-              <a href="../pages/carrito.html"><img src="../assets/icono-carrito.png" alt="carrito" height="30"></a>
-              <a href="#"><img src="../assets/icono-avatar.png" alt="usuario" height="30"></a>
-            </div>
-          </div>
-        </div>
-      </nav>
-</header>
+    <header class="barra-navegacion" role="banner">
+            <nav class="navbar navbar-expand-lg navbar-dark  w-100" role="navigation" aria-label="Barra de navegacion">
+                <div class="container">
+                  <a class="navbar-brand" href="../index.html"><img src="../assets/logo.png" alt="logo" height="50"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+            
+                  <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item" aria-label="Nuevo"></li><a class="nav-link" href="../pages/productos.html"><strong>Nuevo</strong></a></li>
+                      <li class="nav-item" aria-label="Niños"><a class="nav-link" href="#"><strong>Niños</strong></a></li>
+                      <li class="nav-item" aria-label="Deportes"><a class="nav-link" href="#"><strong>Deportes</strong></a></li>
+                      <li class="nav-item" aria-label="Outlet"><a class="nav-link" href="#"><strong>Outlet</strong></a></li>
+                    </ul>
+            
+                    <div class="d-flex gap-3 iconos">
+                      <a href="#"><img src="../assets/icono-corazon.png" alt="favorito" height="30"></a>
+                      <a href="../pages/carrito.html"><img src="../assets/icono-carrito.png" alt="carrito" height="30"></a>
+                      <a href="#"><img src="../assets/icono-avatar.png" alt="usuario" height="30"></a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+    </header>
 
 
-  <aside class="publicidad publicidad-red">
+  <aside class="publicidad publicidad-red" aria-label="Promociones">
     <h3><STRONg>¡SUEDE XL BLACK IN  STOCK!</STRONg></h3>
     <p>
       CORRE ANTES DE QUE SE AGOTEN
@@ -57,12 +69,12 @@
     <a class="nav-link" href="#"><strong>OBTENELAS YA</strong></a></li>
   </aside>
 <BR></BR>
-  <main class="informacion">
+  <main class="informacion" aria-label="Catalogo">
     <!--SECCION CARDS-->
     <div class="titulo">
     <h2>OPORTUNIDADES DESTACADAS>>></h2>
     </div>
-    <section class="container text-center">
+    <section class="container text-center" aria-label="DESTACADOS">
       <div class="row row-cols-2 row-cols-sm-4 row-cols-md-4">
         <article class="col">
           <div class="card ">
@@ -208,7 +220,7 @@
         <div class="titulo">
           <h2>BONITES >>></h2>
           </div>
-        <section class="container text-center">
+        <section class="container text-center" aria-label="BOTINES">
           <div class="row row-cols-2 row-cols-sm-4 row-cols-md-4">
             <article class="col">
               <div class="card ">
@@ -343,7 +355,7 @@
     </div>
 <br>
 <br>
-    <section class="container text-center">
+    <section class="container text-center" aria-label="STYLE">
       <div class="row row-cols-2 row-cols-sm-4 row-cols-md-4">
         <article class="col">
           <div class="card ">
@@ -483,14 +495,15 @@
 
 
 
-  <footer class="footer">
-    <p>Términos y Condiciones
-        Política de privacidad
-    </p>
-    <p>
-        &COPY;PUMA, 2025. Todos los derechos reservados
-    </p>
-</footer>
+       <footer class="footer" role="contentinfo">
+            <p>Términos y Condiciones
+                Política de privacidad
+            </p>
+            <p>
+                &COPY;PUMA, 2025. Todos los derechos reservados
+            </p>
+        </footer>
+
 
 
 
