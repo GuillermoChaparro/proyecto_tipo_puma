@@ -1,0 +1,6 @@
+
+[
+  { "id": 1, "nombre": "Zapatilla PUMA Black", "precio": 29999 },
+  { "id": 2, "nombre": "Zapatilla PUMA White", "precio": 24999 },
+  { "id": 3, "nombre": "Zapatilla PUMA Red", "precio": 26999 }
+]
