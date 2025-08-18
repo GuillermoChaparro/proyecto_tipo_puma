@@ -29,6 +29,8 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="./assets/logo.webp" type="imagen/webp"href="">
     <script src="./js/main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 
 </head>
 <body>
@@ -51,8 +53,8 @@
             
                     <div class="d-flex gap-3 iconos">
                       <a href="#"><img src="./assets/icono-corazon.png" alt="favorito" height="30"></a>
-                      <a href="javascript:void(0);" id="verCarrito" class="position-relative">
-                        <img src="./assets/icono-carrito.png" alt="carrito" height="30">
+                      <a href="javascript:void(0);" id="verCarrito" class="position-relative" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCarrito" aria-controls="offcanvasCarrito">
+                      <img src="./assets/icono-carrito.png" alt="carrito" height="30">
                         <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
                       </a>
                       <a href="#"><img src="./assets/icono-avatar.png" alt="usuario" height="30"></a>
@@ -120,9 +122,16 @@
     <!-- Acá se insertan los productos con JS -->
   </div>
 
-  <div id="carrito"></div>
 </div>
-
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCarrito" aria-labelledby="offcanvasCarritoLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasCarritoLabel">Carrito de compras</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+  </div>
+  <div class="offcanvas-body" id="carrito">
+    <!-- El carrito se renderiza con JS -->
+  </div>
+</div>
 
               
         </main>
